@@ -388,6 +388,7 @@ def iql_test(cuda_num):
         "v_opt_class" : torch.optim.Adam,
         "policy_args" : {
             "nonlinearity_class" : nn.ReLU,
+            "state_based_var" : False,
             "layer_sizes" : [256, 256],
         },
         "policy_lr" : 3e-4,
